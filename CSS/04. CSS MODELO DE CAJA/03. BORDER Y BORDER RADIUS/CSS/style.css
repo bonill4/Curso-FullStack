@@ -1,0 +1,38 @@
+.caja1{
+    width: 400px;
+    height: 200px;
+    /*Cuando tengamos un solo elemento en una composicion y queramos centrarlo
+    Se utilizara el auto de margin para repartir el margen disponible*/
+    margin: 40px auto;/*Centrado de un elemento*/
+    
+    /*Resive 3 parametros
+    1 grueso normalmente se asigna en px
+    2 el estilo que tendra el borde normalmente solido
+    dotted = puntitos
+    dashed = guiones
+    double = lo duplicara
+    menos usados
+    ridge = Dibuja algo parecido a un borde de un marco
+    groove = es muy parecido a ridge
+    inset = Genera como una sombre hacia dentro
+    outset = lo contrario a inset
+    3 color*/
+    border: 4px solid orange;
+}
+
+.caja2{
+    width: 400px;
+    height: 200px;
+    margin: 40px auto;
+
+    /*EJEMPLO DE COMO SE APLICARIA PERO EN SEPARADO
+    EN ESTE CASO CADA LADO ES DIFERENTE*/
+    /*Superior azul, 10PX, solid
+    Derecho rojo, 8PX, dotted
+    Abajo verde, 12px, dashed
+    Izquierda naranja, 6px, double
+    */
+    border-color: blue red green orange;
+    border-width: 10px 8px 12px 6px;
+    border-style: solid dotted dashed double;
+}

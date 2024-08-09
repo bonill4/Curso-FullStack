@@ -1,0 +1,44 @@
+.borde-naranja{
+    border: 1px solid orange;
+}
+
+.caja1{
+    width: 500px;
+    height: 250px;
+    background-color: orange;
+}
+
+.caja2{
+    width: 500px;
+    background-color: plum;
+}
+
+.caja3{
+    width: 50%; /* El 50% abarca el 50% de su elemento padre*/
+    height: 100px;
+    background-color: saddlebrown;
+}
+
+.cita{
+    width: 80%;
+    height: 80px;
+    background-color: lightgray;
+    margin: 0 auto;
+    font-size: 16px;
+    /* overflow: hidden;  Oculta el contenido desbordado */
+    overflow-y: auto; /* "scroll"Agrega un scroll al eje y 
+                          "auto" Se mostrara el scroll solo cuando sea necesario*/                         
+}
+
+.responsive{
+    max-width: 100%; /* Abarca el 100% que tenga el elemento padre */
+
+}
+
+.card{
+    width: 33.333333%;
+    min-width: 220px;
+    height: 260px;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 5px;
+}

@@ -1,0 +1,87 @@
+/* Implementacion de Fuente Interna */
+@font-face {
+    /* Tipo de texto */
+    font-family: 'brushed';
+    /* El estilo del texto osea si es cursiva negrita... */
+    font-style: normal;
+    /* Determina como se vera el texto en sentido a la visivilidad que ronde de 100-900 */
+    font-weight: 400;
+    src: url('../fonts/Mighty\ Brush\ Demo.ttf');
+}
+
+/* Implementacion de Fuente Externa */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Color de la Seleccion */
+*::selection{
+    background-color: darkmagenta;
+    color: white;
+}
+body{
+    /* FUENTES SEGURAS */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+
+    font-family: "Roboto", sans-serif;
+    color: #616161;
+}
+
+h1{
+    /* Tamaño del texto */
+    font-size: 32px;
+    font-family: 'brushed', serif;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: left; /* Valor por defecto */
+}
+
+.cita{
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    padding: 40px;
+    color: #dc143c;
+}
+
+/* Sombreado de Texto */
+.sombreado{
+    /*El primer valor es el desplazamiento del difuminado en "x" el segundo es en "y" 
+    el tercero determina el difuminado del color y por ultimo el color*/
+    text-shadow: 2px 2px 4px grey;
+    font-size: 36px;
+}
+
+/* Subrayar Texto */
+.subrayado{
+    /*line-through: raya el texto 
+    overline: raya sobre el text
+    underline: raya por debajo del texto */
+    
+   /* text-decoration-line: underline;
+    text-decoration-color: #dc143c;     Color del subrayado
+    text-decoration-style: wavy;        Forma en la que mostrara el subrayado*/
+
+    /* Si se desewa simplificar las 3 reglas anteriores tambien se puede hacer
+    ademas el orden que se implementan no influye: */
+    /* Propiedad de tipo shorthand */
+    text-decoration: underline #dc143c wavy;
+}
+
+/* Propiedades de Capitaslizacion */
+.mayusc{
+    /* Todo el texto en mayuscula */
+    text-transform: uppercase;
+}
+
+.minusc{
+    /* Todo el texto en minuscula */
+    text-transform: lowercase;
+}
+
+.capit{
+    /* La primera letra de cada palabra en mayuscula */
+    text-transform: capitalize;
+}

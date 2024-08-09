@@ -1,0 +1,40 @@
+.card{
+    width: 360px;
+    height: 440px;
+    /*Redondear esquinas */
+    border-radius: 15px;
+    /*Para agregar sombreado*/
+    /*Primer valor: Desplazamiento horizontal
+     Segundo valor: Desplazamiento vertical
+     Tercer valor: Difuminado de la sombre (Blur)
+     Cuarto valor: Aumenta la sensacion de tamaño de la sombrer (Sprit, opcional)
+     Quinto vallor: Color*/
+    box-shadow: 2px 2px 4px /*4px*/ rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+/*:hover pseudoclase que hace efecto cuando el cursor para por el elemento*/
+/*Se creara una seudo clase en donde se le dara efecto 
+cuando se pase el mouse sobre el card*/
+.card:hover{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card2{
+    margin: 20px;
+    width: 360px;
+    height: 440px;
+    border-radius: 15px;
+    /*Se crean sombras hacia todas las direcciones (derecha, izquierda, arriba y abajo).*/
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
+                -2px -2px 4px rgba(0, 0, 0, 0.1),
+                -2px 2px 4px rgba(0, 0, 0, 0.1),
+                2px -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card2:hover{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1),
+                -4px -4px 6px rgba(0, 0, 0, 0.1),
+                -4px 4px 6px rgba(0, 0, 0, 0.1),
+                4px -4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.franja{
+    background-color: #52b7bd;
+    margin-top: 150px;
+    text-align: center;
+}
+
+/*Todos los que sean decendientes de franja tendran las reglas 
+en este caso seria a "p" */
+.franja p{
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    color: white;
+    font-size:60px;
+    padding: 20px;
+}
+
+.franja img{
+    /*El valor negativo hace que lo contrario, en este caso en vez
+    de irse para abajo se ira para arriba*/
+    margin-top: -40px;
+}

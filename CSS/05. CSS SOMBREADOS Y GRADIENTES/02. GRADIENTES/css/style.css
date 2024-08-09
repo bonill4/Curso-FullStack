@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*Definir en el modelo de caja las diumenciones que damos hasta donde mide
+    por defecto, esas dimenciones incluye el contenido
+    hace que el tamaño total de un elemento incluya el contenido, el padding y el borde.
+    Es muy comun*/
+    box-sizing: border-box;
+}
+
+.hero{
+    /*vw/vh: se refire que tendra el ancho del dispositivo en ese momento*/
+    width: 100vw;
+    height: 100vh;
+    /* -------------------------------------------------------------- */
+    /* Prefijo de proveedore */
+    /* Lo que proporciona son compatiilidad para la mayoria de navegadores que existen */
+    /* -webkit- Compatible con: Chrome, Safari y todo IOS
+    -moz- Compatible con: Firefox
+    -o- Compatible con: Opera
+    -ms- Compatible con: IExplorer y Edge */
+
+    /* background: -webkit-linear-gradient(bottom, #e54eab 50%, #e00d2c);
+    background: -moz-linear-gradient(bottom, #e54eab 50%, #e00d2c);
+    background: -o-linear-gradient(bottom, #e54eab 50%, #e00d2c);
+    background: -ms-linear-gradient(bottom, #e54eab 50%, #e00d2c); */
+
+    /* Primer Valor: Desde donde nace el gradiante
+    Segundo Valor: Primer color del gradiante, luego se indica el porcentaje
+    en el que predominara el color
+    Tercer Valor: Siguiente color del gradiente */
+    /* ------------------------------------------------------------------- */
+
+    /* RADIANES */
+    background: -webkit-radial-gradient(circle, #e54eab 50%, #e00d2c);
+    background: -moz-radial-gradient(circle, #e54eab 50%, #e00d2c);
+    background: -o-radial-gradient(circle, #e54eab 50%, #e00d2c);
+    background: -ms-radial-gradient(circle, #e54eab 50%, #e00d2c);
+}
+
+.hero p{
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: "Anton", sans-serif;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video en HTML</title>
+</head>
+<body>
+    <!-- Elemento video consus atributos basicos -->
+  <video src="media/Calabaza.mp4"
+            width="640"
+            controls></video>
+    <!-- Elemento videos con atributos adicionales -->
+    <video src="media/Calabaza.mp4"
+            width="640"
+            controls
+            muted
+            preload="none"
+            poster="img/Calabaza.png"></video>
+    <!-- Elemento video con subtitulos -->
+    <video width="640" controls>
+        <source src="media/Calabaza.mp4">
+        <track src="media/sub_es.vtt"
+                srclang="es"
+                label="Castellano"
+                default>
+        <track src="media/sub_en.vtt"
+                srclang="en"
+                label="Ingles">
+    </video>
+</body>
+</html>

@@ -1,0 +1,48 @@
+ul{
+    /*Aplica estilo a la biñeta*/
+    list-style: none;
+    /* list-style-position: inside; */
+}
+
+li{
+    /*Manipular en donde se encuentra ubica la biñeta de cada item*/
+    border: 1px solid orange;
+}
+
+/* Pseudoelemento before (renderiza un contenido antes del elemento) */
+li::before {
+    content: '👌';
+    position: relative;
+    right: 10px;
+    font-size: 30px;
+    color: crimson;
+}
+
+.darth-vader li::before{
+    content: url("../img/icons8-darth-vader-50.png");
+    position: relative;
+    top: 18px;
+    right: 5px;
+}
+
+/* Pseudoclase para elementos repetitivos */
+
+/* li:first-child {                                                
+    color: orange;      
+}
+li:last-child {
+    color: violet;      
+}
+
+li:nth-child(2){
+    color: green;
+} */
+
+/* APLICA ESTILO A LOS ELEMENTOS IMPARES */
+li:nth-child(odd){
+    color:violet
+}
+/* APLICA ESTILO A LOS ELEMENTOS PARES */
+li:nth-child(even){
+    color:green
+}

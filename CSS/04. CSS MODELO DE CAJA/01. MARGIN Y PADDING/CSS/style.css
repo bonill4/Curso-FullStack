@@ -1,0 +1,41 @@
+/*Reseteamos el margin y paddin con el selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja1{
+    width: 400px;
+    height: 200px;
+    background-color: gold;
+
+    /*Margen arriba*/
+    margin-top: 40px;
+     /*Margen derecha*/
+    margin-right: 20px;
+     /*Margen abajo*/
+    margin-bottom: 60px;
+     /*Margen izquierda*/
+    margin-left: 100px;
+}
+.caja2{
+    width: 400px;
+    height: 200px;
+    background-color: green;
+
+    /*Otras formas de usar margin*/
+
+    /*margin: 40px;Todos los lados del elemento tendra 40px*/
+    /*margin: 40px 20px; La primera dimension corresponde arriba/abajo la segundo dimension 
+    corresponde a derecha/izquierda*/
+    /*margin: 20px 40px 20px; Primer elemento corresponde arriba, el segundo corresponde derecha/izquierda, 
+    el tercero corresponde abajo*/
+    margin: 20px 30px 20px 40px; /*Arriba/derecha/abajo/izquierda*/
+}
+
+.aviso{
+    font-size: 40px;
+    color: red;
+    border: 1px solid crimson;
+    padding: 20px 40px;
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Inmtegrar imagen de fondo*/
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/Paris.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero h1{
+    color: white;
+    padding-top: 150px;
+    font-size: 44px;
+    text-align: center;
+}
+.row{
+    padding: 40px;
+}
+
+.row p{
+    color: grey;
+    font-size: 20px;
+
+}
+
+.parallax{
+    padding: 60px 140px;
+    /*Colocar 2 imagenes de fondo, segun el orden asi sera cual estara primero
+    de la misma forma el estilo se aplicara segun el orden de la imagen*/
+    background-image: url("../img/icons8-parapente-48.png"),
+                      url("../img/sunrise-5185467_1280.jpg");
+    /*Para adaptar perfectamente*/
+    background-size: initial, cover;
+     /*No se repetira la imagen*/
+    background-repeat: no-repeat, no-repeat;
+    background-position: 30px 70px, center;
+    /*fixed: Indica al navegador que la imagen estara fija y no se movera con el scroll
+     scroll: la imagen se movera con el scroll*/
+    background-attachment: scroll, fixed;
+}
+
+.parallax p{
+    background-color: rgba(255, 255, 255, 0.60);
+    color: tomato;
+    font-size: 32px;
+    text-align: center;
+    padding: 40px;
+    font-style: italic;
+}

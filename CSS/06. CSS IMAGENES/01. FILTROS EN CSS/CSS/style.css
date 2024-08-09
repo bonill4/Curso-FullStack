@@ -1,0 +1,16 @@
+img {
+    width: 250px;
+    margin: 20px;
+    /* ALGUNOS EJEMPLOS */
+    /* blue(10px): Difumina la imagen todo depende de los pixeles que se le asigne */
+    /* grayscale(100%): Lo hace blanco y negro segun el valr */
+    /* sepia(100%): Convierte los colores de la imagen en tonos de marrón */
+    filter: grayscale(100%);
+}
+
+/* Aqui quitamos el filtro con la pseudo clase "hover"
+el cual toma efecto cuando se pasa el cursor en el 
+elemento */
+img:hover{
+    filter: none;
+}
